@@ -7,6 +7,11 @@
     <title>Contents</title>
 </head>
 <body>
+    <div id = "title">
+        <h1>
+            POGGERS
+        </h1>
+    </div>
     <table>
         <tr>
             <th>Pogface</th>
@@ -16,10 +21,10 @@
         </tr>
         {% for item in results %}
         <tr>
+            <td>{{ item[0]}}</td>
             <td>{{ item[1]}}</td>
             <td>{{ item[2]}}</td>
             <td>{{ item[3]}}</td>
-            <td>{{ item[4]}}</td>
         </tr>
         {%endfor%}
     </table>

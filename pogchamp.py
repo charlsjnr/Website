@@ -20,7 +20,7 @@ def close_connection(exception):
 @app.route("/")
 def home():
     cursor = get_db().cursor()
-    sql = "SELECT * FROM pogchamps"
+    sql = "SELECT pogfaces, classification, type, date FROM pogchamps JOIN gender ON pogchamps.gender_id = gender.id JOIN type_of_face ON pogchamps.facetype_id = type_of_face.id"
     cursor.execute(sql)
     results = cursor.fetchall()
     return render_template("contents.html", results=results)
