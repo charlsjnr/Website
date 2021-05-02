@@ -29,5 +29,21 @@ def contents():
     results = cursor.fetchall()
     return render_template("contents.html", results=results)
 
+@app.route("/pogfaces_namea")
+def pogfaces_namea():
+    cursor = get_db().cursor()
+    sql = "SELECT pogfaces, classification, type, date FROM pogchamps JOIN gender ON pogchamps.gender_id = gender.id JOIN type_of_face ON pogchamps.facetype_id = type_of_face.id ORDER BY pogfaces"
+    cursor.execute(sql)
+    results = cursor.fetchall()
+    return render_template("contentbyname.html", results=results)
+
+@app.route("/pogfaces_namez")
+def pogfaces_namez():
+    cursor = get_db().cursor()
+    sql = "SELECT pogfaces, classification, type, date FROM pogchamps JOIN gender ON pogchamps.gender_id = gender.id JOIN type_of_face ON pogchamps.facetype_id = type_of_face.id ORDER BY pogfaces DESC"
+    cursor.execute(sql)
+    results = cursor.fetchall()
+    return render_template("contentbynamez.html", results=results)
+
 if __name__ == "__main__":
     app.run(debug=True)
