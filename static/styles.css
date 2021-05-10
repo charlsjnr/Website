@@ -1,17 +1,23 @@
 
-
+body{
+  background-color: indigo;
+}
 
 #title{
-  margin-left: auto;
-  margin-right: auto;
+  font-family: 'Comic Sans', 'Comic Sans MS', cursive;
+  background-color: green;
+  padding-left: 46.4%;
 }
 
 #home_button{
-  margin-right: auto;
+  font-family: 'Comic Sans', 'Comic Sans MS', cursive;
+  width: 100%;
+  height: 50px;
 }
 
 table {
-    font-family: arial, sans-serif;
+    font-family: 'Comic Sans', 'Comic Sans MS', cursive;
+    color: whitesmoke;
     border-collapse: collapse;
     width: 40%;
     margin-left: auto;
@@ -20,20 +26,49 @@ table {
   
   td, th {
 
-    border: 1px solid #ffffff;
+    border: 1px solid black;
     text-align: left;
     padding: 10px;
   }
   
   tr:nth-child(even) {
-    background-color: #bdbdbd;
+    background-color: #9059f6;
   }
   
   tr:nth-child(odd) {
-    background-color: #8a8a8a;
+    background-color: #694ea8;
   }
   
   h2 {
     margin-left: auto;
     margin-right: auto;
   }
+
+  #sortnamea_button{
+  font-family: 'Comic Sans', 'Comic Sans MS', cursive;
+  width: 100px;
+  height: 35px;
+  border-radius: 4px;
+  background-color: #694ea8;
+  border: 1px solid whitesmoke;
+  color: whitesmoke;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  }
+
+  #sortnamea_button:hover{
+    font-family: 'Comic Sans', 'Comic Sans MS', cursive;
+    width: 100px;
+    height: 35px;
+    border-radius: 4px;
+    background-color: whitesmoke;
+    border: 2px solid whitesmoke;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    }

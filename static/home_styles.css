@@ -1,7 +1,15 @@
 #title{
-    margin-left: 850px;
+  background-color: green;
+  padding-left: 46%;
+  font-family: 'Comic Sans', 'Comic Sans MS', cursive;
   }
   
 #contents_button{
-    margin-left: 885px;
+  width: 100%;
+  height: 50px;
+  font-family: 'Comic Sans', 'Comic Sans MS', cursive;
+}
+
+body{
+  background-color: indigo;
 }
