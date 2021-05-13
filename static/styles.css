@@ -1,18 +1,42 @@
 
 body{
-  background-color: indigo;
+  background-color:#383838;
+  margin: 0px;
 }
 
 #title{
   font-family: 'Comic Sans', 'Comic Sans MS', cursive;
-  background-color: green;
-  padding-left: 46.4%;
+  background-color:  #a17cb8;
+  text-align: center;
+  padding: 15px;
 }
 
 #home_button{
   font-family: 'Comic Sans', 'Comic Sans MS', cursive;
-  width: 100%;
+  width: 100px;
   height: 50px;
+  border: none;
+  color: #ecebe1;
+  background-color: #c6b3d0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#home_button:hover{
+  font-family: 'Comic Sans', 'Comic Sans MS', cursive;
+  width: 100px;
+  height: 50px;
+  border: none;
+  color: #ecebe1;
+  background-color: #a17cb8;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  
 }
 
 table {
@@ -56,6 +80,7 @@ table {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+
   }
 
   #sortnamea_button:hover{
@@ -71,4 +96,10 @@ table {
     display: inline-block;
     font-size: 16px;
     transition-duration: 0.4s;
+
     }
+
+  #nav_bar{
+    background-color: #c6b3d0;
+    height: 50px;
+  }

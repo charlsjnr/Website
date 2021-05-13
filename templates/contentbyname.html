@@ -12,21 +12,24 @@
             POGGERS
         </h1>
     </div>
-    <div id = "home_button">
+    <div id = "nav_bar">
         <a href = "{{ url_for('home')}}">
             <button id = "home_button" type = "button" href = "home"> Home </button> 
+        </a>
+        <a href = "{{ url_for('contents')}}">
+            <button id = "home_button" type = "button" href = "contents"> Pogchamps </button> 
+        </a>
+        <a href = "{{ url_for('pogfaces_namea')}}">
+            <button id = "home_button" type = "button" href = "pogfaces_namea"> A-Z </button> 
+        </a>
+        <a href = "{{ url_for('pogfaces_namez')}}">
+            <button id = "home_button" type = "button" href = "pogfaces_namez"> Z-A </button> 
         </a>
     </div>
     <br>
     <table>
         <tr>
-            <th>
-                <div id = "sortnamea_button">
-                    <a href = "{{ url_for('pogfaces_namez')}}">
-                        <button id = "sortnamea_button" type = "button" href = "pogfaces_namez"> Pogface </button> 
-                    </a>
-                </div>
-            </th>
+            <th>Pogfaces</th>
             <th>Gender</th>
             <th>Face Type</th>
             <th>Date In Use</th>
