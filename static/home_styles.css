@@ -1,15 +1,52 @@
 #title{
-  background-color: #c6b3d0;
-  padding-left: 45.55%;
   font-family: 'Comic Sans', 'Comic Sans MS', cursive;
-  }
+  background-color:  #a17cb8;
+  text-align: center;
+  padding: 15px;
+  letter-spacing: 75px;
+  background-image: url(/static/images/Pogchamp.png);
+  background-size: 50px;
+}
   
+#nav_bar{
+  background-color: #c6b3d0;
+  height: 50px;
+}
+
 #contents_button{
+  font-family: 'Comic Sans', 'Comic Sans MS', cursive;
   width: 100%;
   height: 50px;
+  border: none;
+  color: #ecebe1;
+  background-color: #c6b3d0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#contents_button:hover{
   font-family: 'Comic Sans', 'Comic Sans MS', cursive;
+  width: 100%;
+  height: 50px;
+  border: none;
+  color: #ecebe1;
+  background-color: #a17cb8;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
 body{
   background-color:#383838;
+  margin: 0;
+}
+
+#pogchamp{
+  width: 100%;
+  height: 260px;
 }

@@ -9,6 +9,7 @@ body{
   background-color:  #a17cb8;
   text-align: center;
   padding: 15px;
+  letter-spacing: 75px;
 }
 
 #home_button{
@@ -22,6 +23,7 @@ body{
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  float: left;
 }
 
 #home_button:hover{
@@ -36,23 +38,24 @@ body{
   display: inline-block;
   font-size: 16px;
   transition-duration: 0.4s;
-  
+  cursor: pointer;
 }
 
 table {
     font-family: 'Comic Sans', 'Comic Sans MS', cursive;
     color: whitesmoke;
     border-collapse: collapse;
-    width: 40%;
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    font-size: large;
   }
   
   td, th {
 
     border: 1px solid black;
     text-align: left;
-    padding: 10px;
+    padding: 20px;
   }
   
   tr:nth-child(even) {

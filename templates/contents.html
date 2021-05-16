@@ -9,22 +9,31 @@
 <body>
     <div id = "title">
         <h1>
-            POGGERS
+             POGGERS
         </h1>
     </div>
     <div id = "nav_bar">
-        <a href = "{{ url_for('home')}}">
-            <button id = "home_button" type = "button" href = "home"> Home </button> 
-        </a>
-        <a href = "{{ url_for('contents')}}">
-            <button id = "home_button" type = "button" href = "contents"> Pogchamps </button> 
-        </a>
-        <a href = "{{ url_for('pogfaces_namea')}}">
-            <button id = "home_button" type = "button" href = "pogfaces_namea"> A-Z </button> 
-        </a>
-        <a href = "{{ url_for('pogfaces_namez')}}">
-            <button id = "home_button" type = "button" href = "pogfaces_namez"> Z-A </button> 
-        </a>
+        <div>
+            <a href = "{{ url_for('home')}}">
+                <button id = "home_button" type = "button" href = "home"> Home </button> 
+            </a>
+        </div>
+        <div>
+            <a href = "{{ url_for('contents')}}">
+                <button id = "home_button" type = "button" href = "contents"> Pogchamps </button> 
+            </a>
+        </div>
+        <div>
+            <a href = "{{ url_for('pogfaces_namea')}}">
+                <button id = "home_button" type = "button" href = "pogfaces_namea"> A-Z </button> 
+            </a>
+        </div>
+        <div>
+            <a href = "{{ url_for('pogfaces_namez')}}">
+                <button id = "home_button" type = "button" href = "pogfaces_namez"> Z-A </button> 
+            </a>
+        </div>
+            
     </div>
     </div>
     <br>
