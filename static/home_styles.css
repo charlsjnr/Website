@@ -1,11 +1,13 @@
+
 #title{
   font-family: 'Comic Sans', 'Comic Sans MS', cursive;
   background-color:  #a17cb8;
+  color: #ecebe1;
   text-align: center;
   padding: 15px;
   letter-spacing: 75px;
   background-image: url(/static/images/Pogchamp.png);
-  background-size: 50px;
+  background-size: 60px;
 }
   
 #nav_bar{
@@ -44,9 +46,16 @@
 body{
   background-color:#383838;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 #pogchamp{
+  width: 100%;
+  height: 260px;
+}
+
+#cop{
   width: 100%;
   height: 260px;
 }
