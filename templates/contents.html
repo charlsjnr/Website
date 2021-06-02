@@ -20,20 +20,39 @@
         </div>
         <div>
             <a href = "{{ url_for('contents')}}">
-                <button id = "home_button" type = "button" href = "contents"> Pogchamps </button> 
+                <button id = "home_button" type = "button" href = "contents"> Oldest </button> 
+            </a>
+        </div>
+        <div>
+            <a href = "{{ url_for('pogfaces_recent')}}">
+                <button id = "home_button" type = "button" href = "contents"> Newest </button> 
             </a>
         </div>
         <div>
             <a href = "{{ url_for('pogfaces_namea')}}">
-                <button id = "home_button" type = "button" href = "pogfaces_namea"> A-Z </button> 
+                <button id = "home_button" type = "button" href = "contents"> A-Z </button> 
             </a>
         </div>
         <div>
             <a href = "{{ url_for('pogfaces_namez')}}">
-                <button id = "home_button" type = "button" href = "pogfaces_namez"> Z-A </button> 
+                <button id = "home_button" type = "button" href = "contents"> Z-A </button> 
             </a>
         </div>
-            
+        <div>
+            <a href = "{{ url_for('pogfaces_men')}}">
+                <button id = "home_button" type = "button" href = "contents"> Male </button> 
+            </a>
+        </div>
+        <div>
+            <a href = "{{ url_for('pogfaces_women')}}">
+                <button id = "home_button" type = "button" href = "contents"> Female </button> 
+            </a>
+        </div>         
+        <div>
+            <a href = "{{ url_for('pogfaces_nonbinary')}}">
+                <button id = "home_button" type = "button" href = "contents"> Non-Binary </button> 
+            </a>
+        </div>  
     </div>
     </div>
     <br>

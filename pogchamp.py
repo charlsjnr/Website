@@ -29,13 +29,21 @@ def contents():
     results = cursor.fetchall()
     return render_template("contents.html", results=results)
 
+@app.route("/pogfaces_recent")
+def pogfaces_recent():
+    cursor = get_db().cursor()
+    sql = "SELECT pogfaces, classification, type, date, filename FROM pogchamps JOIN gender ON pogchamps.gender_id = gender.id JOIN type_of_face ON pogchamps.facetype_id = type_of_face.id ORDER BY date DESC"
+    cursor.execute(sql)
+    results = cursor.fetchall()
+    return render_template("contents.html", results=results)
+
 @app.route("/pogfaces_namea")
 def pogfaces_namea():
     cursor = get_db().cursor()
     sql = "SELECT pogfaces, classification, type, date, filename FROM pogchamps JOIN gender ON pogchamps.gender_id = gender.id JOIN type_of_face ON pogchamps.facetype_id = type_of_face.id ORDER BY pogfaces"
     cursor.execute(sql)
     results = cursor.fetchall()
-    return render_template("contentbyname.html", results=results)
+    return render_template("contents.html", results=results)
 
 @app.route("/pogfaces_namez")
 def pogfaces_namez():
@@ -43,10 +51,36 @@ def pogfaces_namez():
     sql = "SELECT pogfaces, classification, type, date, filename FROM pogchamps JOIN gender ON pogchamps.gender_id = gender.id JOIN type_of_face ON pogchamps.facetype_id = type_of_face.id ORDER BY pogfaces DESC"
     cursor.execute(sql)
     results = cursor.fetchall()
-    return render_template("contentbynamez.html", results=results)
+    return render_template("contents.html", results=results)
+
+@app.route("/pogfaces_men")
+def pogfaces_men():
+    cursor = get_db().cursor()
+    sql = "SELECT pogfaces, classification, type, date, filename FROM pogchamps JOIN gender ON pogchamps.gender_id = gender.id JOIN type_of_face ON pogchamps.facetype_id = type_of_face.id WHERE gender.id = '1'"
+    cursor.execute(sql)
+    results = cursor.fetchall()
+    return render_template("contents.html", results=results)
+
+@app.route("/pogfaces_women")
+def pogfaces_women():
+    cursor = get_db().cursor()
+    sql = "SELECT pogfaces, classification, type, date, filename FROM pogchamps JOIN gender ON pogchamps.gender_id = gender.id JOIN type_of_face ON pogchamps.facetype_id = type_of_face.id WHERE gender.id = '2'"
+    cursor.execute(sql)
+    results = cursor.fetchall()
+    return render_template("contents.html", results=results)
+
+@app.route("/pogfaces_non-binary")
+def pogfaces_nonbinary():
+    cursor = get_db().cursor()
+    sql = "SELECT pogfaces, classification, type, date, filename FROM pogchamps JOIN gender ON pogchamps.gender_id = gender.id JOIN type_of_face ON pogchamps.facetype_id = type_of_face.id WHERE gender.id = '3'"
+    cursor.execute(sql)
+    results = cursor.fetchall()
+    return render_template("contents.html", results=results)
 
 if __name__ == "__main__":
     app.run(debug=True)
 
 
-#https://pynative.com/python-sqlite-blob-insert-and-retrieve-digital-data/
+#https://www.mikiyakobayashi.com/projects
+#https://www.deskpass.com/
+#https://www.gucci.com/nz/en_au/
