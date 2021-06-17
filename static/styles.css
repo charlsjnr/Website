@@ -46,31 +46,33 @@ table {
     font-family: 'Comic Sans', 'Comic Sans MS', cursive;
     color: whitesmoke;
     border-collapse: collapse;
-    width: 1000px;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     font-size: large;
   }
 
   table, img{
-    width: 50px;
-    padding: 0px;
+    height: 50px;
+    padding: 10px;
   }
   
   td, th {
-
-    border: 1px solid black;
     text-align: left;
-    padding: 20px;
+
   }
 
-  
-  tr:nth-child(even) {
-    background-color: #9059f6;
+  th {
+    border-bottom: 1px solid #697cb6;
+    padding-bottom: 10px;
+    border-width: 4px; 
   }
-  
-  tr:nth-child(odd) {
+
+
+
+  #poop:hover{
     background-color: #694ea8;
+    cursor: pointer;
   }
 
   h2 {
@@ -112,4 +114,9 @@ table {
   #nav_bar{
     background-color: #c6b3d0;
     height: 50px;
+  }
+
+  #hometext{
+    width: fit-content;
+    height: 100%;
   }

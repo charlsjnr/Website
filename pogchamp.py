@@ -84,3 +84,7 @@ if __name__ == "__main__":
 #https://www.mikiyakobayashi.com/projects
 #https://www.deskpass.com/
 #https://www.gucci.com/nz/en_au/
+
+
+#https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp  <Slideshow like Gucci>
+#https://www.w3schools.com/howto/howto_js_image_comparison.asp  <Comparison for Pog and Komodohype>

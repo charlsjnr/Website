@@ -7,18 +7,26 @@
     <title>Home</title>
 </head>
 <body>
-    <div id="page">
-        <div id = "scrollface" width="40%" >
-            <marquee  behavior="scroll" direction="up" height="933px" width="49%" id = "test">
-                <a href = "{{ url_for('contents')}}">
-                    <img src="/static/images/Pogchamp.png" width = "100%" alt="pp">
-                </a>
-            </marquee>
-            <marquee truespeed="truespeed" scrolldelay="-1" behavior="scroll" direction="up" height="933px" width="49%" id = "test">
-                <a href = "{{ url_for('pogfaces_namea')}}">
-                    <img src="/static/images/Pogchamp.png" width = "100%" alt="pp">
-                </a>
-            </marquee>
+    <div id="page" >
+        <div id = "scrollface">
+            <div class="row"> 
+                <div class="column">
+                  <img src="/static/images/Pogchamp.png" style="width:100%">
+                  <img src="/static/images/Pogchamp.png" style="width:100%">
+                  <img src="/static/images/Pogchamp.png" style="width:100%">
+                  <img src="/static/images/Pogchamp.png" style="width:100%">
+                  <img src="/static/images/Pogchamp.png" style="width:100%">
+                  <img src="/static/images/Pogchamp.png" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="/static/images/Pogchamp.png" style="width:100%">
+                  <img src="/static/images/Pogchamp.png" style="width:100%">
+                  <img src="/static/images/Pogchamp.png" style="width:100%">
+                  <img src="/static/images/Pogchamp.png" style="width:100%">
+                  <img src="/static/images/Pogchamp.png" style="width:100%">
+                  <img src="/static/images/Pogchamp.png" style="width:100%">
+                </div> 
+              </div>
         </div>
         <div id="heading">
             <div id = "title">
@@ -34,15 +42,19 @@
                 </div>
             </div>
             <br><br><br><br><br><br>
-            <h2 id=maintext>
-                The Repository For Pogchamps
-            </h2>
-            <h3 id=subtext>
-                Discover many facts and the history of Pogchamps. This website is dedicated to giving you all the information about Pogchamps for free.
-            </h3>
-            <a href = "{{ url_for('contents')}}" >
-                <button id = "contentbut" type = "button" href = "contents"> Visit The Repository </button> 
-            </a>
+            <div id=hometext>
+                <h2 id=maintext>
+                    The Repository For Pogchamps
+                </h2>
+                <h3 id=subtext>
+                    Discover many facts and the history of Pogchamps. This website is dedicated to giving you all the information about Pogchamps for free.
+                </h3>
+                <a href = "{{ url_for('contents')}}" >
+                    <button id = "contentbut" type = "button" href = "contents"> Visit The Repository </button> 
+                </a>
+            </div>
         </div>
     </div>
 </body>
+
+
