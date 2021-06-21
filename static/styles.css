@@ -43,7 +43,7 @@ body{
 }
 
 table {
-    font-family: 'Comic Sans', 'Comic Sans MS', cursive;
+  font-family: "Monaco", "Courier New", monospace;
     color: whitesmoke;
     border-collapse: collapse;
     width: 80%;
@@ -68,6 +68,7 @@ table {
     border-width: 4px; 
   }
 
+
   tr:focus-within {
     background: #f2f3ff;
     outline: none;
@@ -76,6 +77,13 @@ table {
   #poop:hover{
     background-color: #694ea8;
     cursor: pointer;
+    
+  }
+
+  #poop a{
+    color: #f2f3ff;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-decoration: none;
   }
 
   h2 {
