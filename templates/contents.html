@@ -66,11 +66,11 @@
         </tr>
         {% for item in results %}
         <tr id="poop">
-            <td><img src="/static/images/{{item[4]}}" alt="image"></td>
-            <td>{{ item[0]}}</td>
-            <td>{{ item[1]}}</td>
-            <td>{{ item[2]}}</td>
-            <td id = "date">{{ item[3]}}</td>
+            <td><a href = "{{ url_for('pogfaces_nonbinary')}}" tabindex="-1"><img src="/static/images/{{item[4]}}" alt="image"></a></td>
+            <td><a href = "{{ url_for('pogfaces_nonbinary')}}" tabindex="-1">{{ item[0]}}</a></td>
+            <td><a href = "{{ url_for('pogfaces_nonbinary')}}" tabindex="-1">{{ item[1]}}</a></td>
+            <td><a href = "{{ url_for('pogfaces_nonbinary')}}" tabindex="-1">{{ item[2]}}</a></td>
+            <td id = "date"><a href = "{{ url_for('pogfaces_nonbinary')}}" tabindex="-1">{{ item[3]}}</a></td>
         </tr>
         {%endfor%}
     </table>

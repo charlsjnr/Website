@@ -1,4 +1,5 @@
 import sqlite3
+import time
 from flask import Flask, g, render_template, request, redirect
 
 app = Flask(__name__)
@@ -76,6 +77,7 @@ def pogfaces_nonbinary():
     cursor.execute(sql)
     results = cursor.fetchall()
     return render_template("contents.html", results=results)
+
 
 if __name__ == "__main__":
     app.run(debug=True)
