@@ -10,6 +10,8 @@ body{
   text-align: center;
   padding: 15px;
   letter-spacing: 75px;
+  position: sticky;
+  top: 0;
 }
 
 #home_button{
@@ -24,19 +26,13 @@ body{
   display: inline-block;
   font-size: 16px;
   float: left;
-  
+  transition-duration: 0.4s;
+  outline: none;
 }
 
 #home_button:hover{
-  font-family: 'Comic Sans', 'Comic Sans MS', cursive;
-  width: 100px;
-  height: 50px;
-  border: none;
-  color: #ecebe1;
+  width: 150px;
   background-color: #a17cb8;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   transition-duration: 0.4s;
   cursor: pointer;
@@ -44,12 +40,12 @@ body{
 
 table {
   font-family: "Monaco", "Courier New", monospace;
-    color: whitesmoke;
-    border-collapse: collapse;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: large;
+  color: whitesmoke;
+  border-collapse: collapse;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: large;
   }
 
   table, img{
@@ -62,10 +58,21 @@ table {
 
   }
 
+  .poopy{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+  }
+
+  #poo{
+    
+  }
+
   th {
     border-bottom: 1px solid #697cb6;
     padding-bottom: 10px;
     border-width: 4px; 
+    font-size: larger;
   }
 
 
@@ -77,13 +84,24 @@ table {
   #poop:hover{
     background-color: #694ea8;
     cursor: pointer;
-    
+    transition-duration: 0.2s;
   }
 
   #poop a{
     color: #f2f3ff;
     font-family: "Lucida Console", "Courier New", monospace;
     text-decoration: none;
+    outline: none;
+  }
+
+  #poop{
+    transition-duration: 0.4s;
+  }
+
+  .info{
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color:#697cb6;
   }
 
   h2 {
@@ -91,40 +109,11 @@ table {
     margin-right: auto;
   }
 
-  #sortnamea_button{
-  font-family: 'Comic Sans', 'Comic Sans MS', cursive;
-  width: 100px;
-  height: 35px;
-  border-radius: 4px;
-  background-color: #694ea8;
-  border: 1px solid whitesmoke;
-  color: whitesmoke;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-
-  }
-
-  #sortnamea_button:hover{
-    font-family: 'Comic Sans', 'Comic Sans MS', cursive;
-    width: 100px;
-    height: 35px;
-    border-radius: 4px;
-    background-color: whitesmoke;
-    border: 2px solid whitesmoke;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    transition-duration: 0.4s;
-
-    }
-
   #nav_bar{
     background-color: #c6b3d0;
     height: 50px;
+    position: sticky;
+    top: 117px;
   }
 
   #hometext{

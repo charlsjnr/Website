@@ -55,7 +55,9 @@
         </div>  
     </div>
     </div>
-    <br>
+    <br><br>
+    <h1 class = "info"> CLICK ON THE ONE YOU WANT MORE INFO ON</h1>
+    <br><br>
     <table>
         <tr>
             <th></th>
@@ -66,11 +68,11 @@
         </tr>
         {% for item in results %}
         <tr id="poop">
-            <td><a href = "{{ url_for('pogfaces_nonbinary')}}" tabindex="-1"><img src="/static/images/{{item[4]}}" alt="image"></a></td>
-            <td><a href = "{{ url_for('pogfaces_nonbinary')}}" tabindex="-1">{{ item[0]}}</a></td>
-            <td><a href = "{{ url_for('pogfaces_nonbinary')}}" tabindex="-1">{{ item[1]}}</a></td>
-            <td><a href = "{{ url_for('pogfaces_nonbinary')}}" tabindex="-1">{{ item[2]}}</a></td>
-            <td id = "date"><a href = "{{ url_for('pogfaces_nonbinary')}}" tabindex="-1">{{ item[3]}}</a></td>
+            <td><a href = "{{ url_for('info')}}" tabindex="-1" class = "poopy"><img src="/static/images/{{item[4]}}" alt="image"></a></td>
+            <td><a href = "{{ url_for('info')}}" tabindex="-1" class = "poopy" id = "poo">{{ item[0]}}</a></td>
+            <td><a href = "{{ url_for('info')}}" tabindex="-1" class = "poopy" id = "poo">{{ item[1]}}</a></td>
+            <td><a href = "{{ url_for('info')}}" tabindex="-1" class = "poopy" id = "poo">{{ item[2]}}</a></td>
+            <td id = "date"><a href = "{{ url_for('info')}}" tabindex="-1" class = "poopy" id = "poo">{{ item[3]}}</a></td>
         </tr>
         {%endfor%}
     </table>
