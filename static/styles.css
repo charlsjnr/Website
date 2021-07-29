@@ -6,7 +6,7 @@ body{
 
 #title{
   font-family: 'Comic Sans', 'Comic Sans MS', cursive;
-  background-color:  #a17cb8;
+  background-image: linear-gradient(#a17cb8, #a17cb850);
   text-align: center;
   padding: 15px;
   letter-spacing: 75px;
@@ -19,9 +19,9 @@ body{
   width: 100px;
   height: 50px;
   border: none;
-  color: #ecebe1;
-  background-color: #c6b3d0;
   text-align: center;
+  background: rgb(136, 66, 213, 0);
+  color: #161616;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
@@ -32,8 +32,7 @@ body{
 
 #home_button:hover{
   width: 150px;
-  background-color: #a17cb8;
-  font-size: 16px;
+  font-size: 20px;
   transition-duration: 0.4s;
   cursor: pointer;
 }
@@ -82,7 +81,7 @@ table {
   }
   
   #poop:hover{
-    background-color: #694ea8;
+    background-color: #a074bb;
     cursor: pointer;
     transition-duration: 0.2s;
   }
@@ -110,7 +109,7 @@ table {
   }
 
   #nav_bar{
-    background-color: #c6b3d0;
+    background-image: linear-gradient(#a17cb850, #a17cb800);
     height: 50px;
     position: sticky;
     top: 117px;
