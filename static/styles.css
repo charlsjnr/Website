@@ -5,8 +5,10 @@ body{
 }
 
 #title{
-  font-family: 'Comic Sans', 'Comic Sans MS', cursive;
-  background-image: linear-gradient(#a17cb8, #a17cb850);
+  font-family: "Monaco", "Courier New", monospace;
+  font-size: larger;
+  font-weight: bolder;
+  background-image: linear-gradient(#a17cb8, #a17cb800);
   text-align: center;
   padding: 15px;
   letter-spacing: 75px;
@@ -15,26 +17,29 @@ body{
 }
 
 #home_button{
-  font-family: 'Comic Sans', 'Comic Sans MS', cursive;
+  font-family: "Monaco", "Courier New", monospace;
+  font-weight: 700;
   width: 100px;
   height: 50px;
-  border: none;
+  border: 1px solid #161616;
   text-align: center;
   background: rgb(136, 66, 213, 0);
-  color: #161616;
+  color: #c9c9c9;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  float: left;
+  
   transition-duration: 0.4s;
   outline: none;
 }
 
 #home_button:hover{
-  width: 150px;
+  width: 125px;
   font-size: 20px;
-  transition-duration: 0.4s;
+  transition-duration: 0.5s;
   cursor: pointer;
+  border-radius: 00px 25px 25px 0px;
+  background-color: #a17cb8;
 }
 
 table {
@@ -109,7 +114,7 @@ table {
   }
 
   #nav_bar{
-    background-image: linear-gradient(#a17cb850, #a17cb800);
+    background-color: none;
     height: 50px;
     position: sticky;
     top: 117px;
