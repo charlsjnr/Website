@@ -102,11 +102,6 @@ table {
     transition-duration: 0.4s;
   }
 
-  .info{
-    text-align: center;
-    font-family: "Lucida Console", "Courier New", monospace;
-    color:#697cb6;
-  }
 
   h2 {
     margin-left: auto;
@@ -116,6 +111,7 @@ table {
   #nav_bar{
     background-color: none;
     height: 50px;
+    width: 100px;
     position: sticky;
     top: 117px;
   }

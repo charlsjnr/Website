@@ -18,18 +18,21 @@ def close_connection(exception):
     if db is not None:
         db.close()
 
+#renders home page
 @app.route("/")
 def home():
     return render_template("home.html")
 
+#renders database page, ordering from oldest pogchamp
 @app.route("/pogfaces")
-def contents():
+def contents(): 
     cursor = get_db().cursor()
     sql = "SELECT pogfaces, classification, type, date, filename FROM pogchamps JOIN gender ON pogchamps.gender_id = gender.id JOIN type_of_face ON pogchamps.facetype_id = type_of_face.id"
     cursor.execute(sql)
     results = cursor.fetchall()
     return render_template("contents.html", results=results)
 
+#orders database from most recent pogchamp
 @app.route("/pogfaces_recent")
 def pogfaces_recent():
     cursor = get_db().cursor()
@@ -38,6 +41,7 @@ def pogfaces_recent():
     results = cursor.fetchall()
     return render_template("contents.html", results=results)
 
+#orders database in alphabetical order
 @app.route("/pogfaces_namea")
 def pogfaces_namea():
     cursor = get_db().cursor()
@@ -46,6 +50,7 @@ def pogfaces_namea():
     results = cursor.fetchall()
     return render_template("contents.html", results=results)
 
+#orders database in reverse alphabetical order
 @app.route("/pogfaces_namez")
 def pogfaces_namez():
     cursor = get_db().cursor()
@@ -54,6 +59,7 @@ def pogfaces_namez():
     results = cursor.fetchall()
     return render_template("contents.html", results=results)
 
+#filters database to show only male faces
 @app.route("/pogfaces_men")
 def pogfaces_men():
     cursor = get_db().cursor()
@@ -62,6 +68,7 @@ def pogfaces_men():
     results = cursor.fetchall()
     return render_template("contents.html", results=results)
 
+#filters database to show only female faces
 @app.route("/pogfaces_women")
 def pogfaces_women():
     cursor = get_db().cursor()
@@ -70,6 +77,7 @@ def pogfaces_women():
     results = cursor.fetchall()
     return render_template("contents.html", results=results)
 
+#filters database to show only non-binary pogchamps
 @app.route("/pogfaces_non-binary")
 def pogfaces_nonbinary():
     cursor = get_db().cursor()
@@ -78,22 +86,5 @@ def pogfaces_nonbinary():
     results = cursor.fetchall()
     return render_template("contents.html", results=results)
 
-@app.route("/information")
-def info():
-    cursor = get_db().cursor()
-    sql = "SELECT pogfaces, classification, type, date, filename FROM pogchamps JOIN gender ON pogchamps.gender_id = gender.id JOIN type_of_face ON pogchamps.facetype_id = type_of_face.id WHERE gender.id = '3'"
-    cursor.execute(sql)
-    results = cursor.fetchall()
-    return render_template("information.html", results=results)
-
 if __name__ == "__main__":
     app.run(debug=True)
-
-
-#https://www.mikiyakobayashi.com/projects
-#https://www.deskpass.com/
-#https://www.gucci.com/nz/en_au/
-
-
-#https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp  <Slideshow like Gucci>
-#https://www.w3schools.com/howto/howto_js_image_comparison.asp  <Comparison for Pog and Komodohype>
